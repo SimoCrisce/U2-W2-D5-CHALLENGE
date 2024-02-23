@@ -20,52 +20,57 @@
     <title>Edit Profile</title>
   </head>
   <body class="bg-black text-white">
-    <div class="d-flex justify-content-center align-items-center">
-      <!-- <div class="border">
-        <h1 class="border-bottom border-light pb-1">Edit Profile</h1>
-      </div> -->
-      <div class="row"></div>
-      <div>
-        <img width="86px" src="./Netflix-assets/assets/avatar.png" alt="" />
-      </div>
-      <div>
-        <div>
-          <input class="bg-secondary text-white px-2" type="text" value="Strive Student" />
-          <div class="fs-5">Language:</div>
-          <select class="form-select bg-black text-white rounded-0" id="">
-            <option selected>English</option>
-          </select>
+    <img src="./Netflix-assets/assets/netflix_logo.png" width="100px" alt="" />
+    <div class="d-flex justify-content-center mt-3">
+      <div class="row">
+        <h1 class="border-bottom border-secondary pb-1">Edit Profile</h1>
+        <div class="col-2">
+          <img width="100px" src="./Netflix-assets/assets/avatar.png" alt="" />
         </div>
-        <div>
-          <div class="fs-5">Maturity Settings:</div>
-          <div class="border-bottom border-secondary pb-3">
-            <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-              <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off" />
-              <label class="btn bg-dark text-white rounded-0" for="btncheck1">ALL MATURITY RATINGS</label>
-            </div>
-            <div>Show titles of <strong>all maturity ratings</strong> for this profile.</div>
-            <div><button class="btn btn-outline-secondary rounded-0">EDIT</button></div>
+        <!-- COLONNA DESTRA -->
+        <div class="col-6">
+          <div class="mb-4">
+            <input class="bg-secondary text-white px-2 mb-2" type="text" value="Strive Student" />
+            <div class="fs-5">Language:</div>
+            <select class="form-select bg-black text-white rounded-0 w-50" id="">
+              <option selected>English</option>
+            </select>
           </div>
-        </div>
-        <div class="border-bottom border-secondary pb-4 mt-3">
-          <div>
-            <div class="fs-5">Autoplay controls</div>
+          <div class="pt-3 border-top border-secondary">
+            <div class="fs-5 mb-2">Maturity Settings:</div>
+            <div class="border-bottom border-secondary pb-4">
+              <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off" />
+                <label class="btn bg-dark text-white rounded-0 mb-2" for="btncheck1">ALL MATURITY RATINGS</label>
+              </div>
+              <div class="mb-3">Show titles of <strong>all maturity ratings</strong> for this profile.</div>
+              <div><button class="btn btn-outline-secondary rounded-0">EDIT</button></div>
+            </div>
+          </div>
+          <div class="pb-4 mt-3">
+            <div>
+              <div class="fs-5 mb-2">Autoplay controls</div>
 
-            <div>
-              <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off" />
-              <label class="btn btn-outline-secondary rounded-0" for="btncheck3"><i class="fas fa-check"></i></label>
-              Autoplay next episode in a series in all devices.
-            </div>
-            <div>
-              <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off" />
-              <label class="btn btn-outline-secondary rounded-0" for="btncheck2"><i class="fas fa-check"></i></label>
-              Autoplay previews while browsing on all devices.
+              <div>
+                <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off" />
+                <label class="btn px-2 btn-outline-secondary rounded-0 mb-2" for="btncheck3"
+                  ><i class="fas fa-check"></i
+                ></label>
+                Autoplay next episode in a series in all devices.
+              </div>
+              <div>
+                <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off" />
+                <label class="btn px-2 btn-outline-secondary rounded-0" for="btncheck2"
+                  ><i class="fas fa-check"></i
+                ></label>
+                Autoplay previews while browsing on all devices.
+              </div>
             </div>
           </div>
         </div>
-        <div>
-          <button class="btn bg-light text-black rounded-0">SAVE</button>
-          <button class="btn btn-outline-secondary rounded-0">CANCEL</button>
+        <div class="border-top border-secondary pt-4 mt-2">
+          <button class="btn bg-light text-black rounded-0 me-2 fw-bold">SAVE</button>
+          <button class="btn btn-outline-secondary rounded-0 me-2">CANCEL</button>
           <button class="btn btn-outline-secondary rounded-0">DELETE PROFILE</button>
         </div>
       </div>
